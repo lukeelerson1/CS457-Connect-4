@@ -1,3 +1,6 @@
+#README
+Socket Programming Project
+
 # Statement of Work (SOW)
 
 ## Project Title: Connect 4 - ONLINE PEW PEW POW THE ACTION GAME BWAHHHHHHH
