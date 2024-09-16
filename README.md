@@ -1,4 +1,4 @@
-# Statement of Work (SOW) Template for Socket Programming Project
+# Statement of Work (SOW)
 
 ## Project Title: Connect 4 - ONLINE PEW PEW POW THE ACTION GAME BWAHHHHHHH
 
@@ -24,37 +24,40 @@ To create an online, browser-based Connect 4 game.
 ## Timeline
 
 ### Key Milestones
-- **Milestone 1:** [Description] - Estimated Completion: [Date]
-- **Milestone 2:** [Description] - Estimated Completion: [Date]
-- **Milestone 3:** [Description] - Estimated Completion: [Date]
+- **Milestone 1:** [Description] - Estimated Completion: [Date]  TBD
+- **Milestone 2:** [Description] - Estimated Completion: [Date]  TBD
+- **Milestone 3:** [Description] - Estimated Completion: [Date]  TBD
 
 ### Task Breakdown
-- **Task 1:** [Description] - Estimated Duration: [Hours/Days]
-- **Task 2:** [Description] - Estimated Duration: [Hours/Days]
-- **Task 3:** [Description] - Estimated Duration: [Hours/Days]
+- **Task 1:** [Description] - Estimated Duration: [Hours/Days]  TBD
+- **Task 2:** [Description] - Estimated Duration: [Hours/Days]  TBD
+- **Task 3:** [Description] - Estimated Duration: [Hours/Days]  TBD
 
 ## Technical Requirements
 
 ### Hardware
-- [Specify any hardware requirements, e.g., servers, networking equipment, specific devices]
+- Computer with modern web browser
+- server hopefully to be ran with AWS 
 
 ### Software
 - **Programming Languages:** Python
-- **Libraries:** socket, threading, [any additional libraries]
-- **Operating Systems:** [e.g., Windows, macOS, Linux]
+- **Libraries:** socket, threading
+- **Operating Systems:** Windows
 
 ## Assumptions
-- [State any assumptions, e.g., network connectivity, availability of resources]
+- Will require available network
+- will require modern browser than can support gui
 
 ## Roles and Responsibilities
-- **Project Manager:** [Name] - [Responsibilities]
-- **Developers:** [Names] - [Responsibilities]
-- **Testers:** [Names] - [Responsibilities]
+- **Project Manager:** [Lukas Eelrson] - [Keeping with required timelines and expectations]
+- **Developers:** [Lukas Elerson] - [Developing all code required]
+- **Testers:** [Lukas Elerson] - [TEsting functionality of code]
 
 ## Communication Plan
-- **Channels:** [e.g., Slack, email, GitHub issues]
-- **Frequency:** [e.g., Weekly meetings, daily updates]
-- **Decision-Making:** [e.g., Regular review meetings, decision by consensus]
+Single person team, so will not be accounted for
+- **Channels:** N/A
+- **Frequency:** N/A
+- **Decision-Making:** N/A
 
 ## Additional Notes
-- [Include any other relevant information or considerations specific to your project]
+- TBD
