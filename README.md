@@ -16,6 +16,12 @@ To create an online, browser-based Connect 4 game.
 - Online connectivity
 - Simple browser-based GUI
 - Basic Connect Four functionality
+- Server-Client Architecture: The game must implement a clear server-client architecture, with the server handling game state and communication between clients.
+- Game Logic: The game must accurately implement the rules of the game (as defined in your SOW):
+Alternating turns between players.Determining the winner.
+Handling draw conditions.
+-Multiplayer Capability: The game should allow multiple clients to connect and play simultaneously.
+Error Handling: The game should gracefully handle common errors, such as network failures, invalid input, or unexpected game states.
 
 ### Exclusions
 - None
