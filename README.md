@@ -41,8 +41,8 @@ Error Handling: The game should gracefully handle common errors, such as network
 - **Sprint 5:** [Implement Error Handling and Testing] - Nov 17-Dec 6 
 
 ### Task Breakdown
-- **Task 1:** [Description] - Estimated Duration: [Hours/Days]  TBD
-- **Task 2:** [Description] - Estimated Duration: [Hours/Days]  TBD
+- **Task 1:** [Implement Server] - Estimated Duration: [8/1]  TBD
+- **Task 2:** [Implement Client] - Estimated Duration: [8/1]  TBD
 - **Task 3:** [Description] - Estimated Duration: [Hours/Days]  TBD
 
 ## Technical Requirements
