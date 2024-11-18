@@ -67,11 +67,12 @@ def receive_messages(client_socket):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Connect 4 Client')
-    parser.add_argument('--host', type=str, default='localhost', help='IP address of the server')
-    parser.add_argument('--port', type=int, default=12346, help='Port number of the server')
+    parser.add_argument('-i', '--host', type=str, required=True, help='IP address of the server')
+    parser.add_argument('-p', '--port', type=int, required=True, help='Port number of the server')
 
     args = parser.parse_args()
     client_socket = connect_to_server(args.host, args.port)
+    # ... rest of your code
     if client_socket:
         receive_thread = threading.Thread(target=receive_messages, args=(client_socket,))
         receive_thread.start()
