@@ -131,6 +131,7 @@ def start_server(host='localhost', port=12346):
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.bind((host, port))
     server_socket.listen(5)
+    print(f"Server started on {host}:{port}")
     logging.info(f"Server listening on {host}:{port}")
 
     while True:
@@ -140,8 +141,7 @@ def start_server(host='localhost', port=12346):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Connect 4 Server')
-    parser.add_argument('--host', type=str, default='localhost', help='IP address of the server')
-    parser.add_argument('--port', type=int, default=12346, help='Port number of the server')
+    parser.add_argument('-p', '--port', type=int, default=12346)
 
     args = parser.parse_args()
-    start_server(args.host, args.port)
+    start_server('0.0.0.0', args.port)
