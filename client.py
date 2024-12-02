@@ -67,16 +67,20 @@ class Connect4Client:
                     self.update_board()
                 elif message_type == "chat":
                     logging.info(f"Chat: {data.get('message')}")
+                    self.chat_log.config(state='normal')
                     self.chat_log.insert(tk.END, f"Chat: {data.get('message')}\n")
+                    self.chat_log.config(state='disabled')
                 elif message_type == "game_over":
                     logging.info(data.get("message"))
                     messagebox.showinfo("Game Over", data.get("message"))
+                elif message_type == "not_your_turn":
+                    messagebox.showerror("Error", "Not your turn!")
+                    self.update_board()
             except Exception as e:
                 logging.error(f"Error receiving message: {e}")
                 break
 
     def create_gui(self):
-        # Create board display
         self.board_frame = tk.Frame(self.window)
         self.board_frame.grid(row=0, column=0, columnspan=7, pady=10)
         
@@ -85,13 +89,11 @@ class Connect4Client:
             for c in range(COLUMNS):
                 self.cells[r][c].grid(row=r, column=c, padx=2, pady=2)
         
-        # Create column buttons
         self.buttons = [tk.Button(self.window, text=f"Drop {col+1}", command=lambda c=col: self.send_move(c+1)) for col in range(COLUMNS)]
         for col, button in enumerate(self.buttons):
             button.grid(row=1, column=col, padx=5, pady=5)
 
-        # Chat entry and log
-        self.chat_log = tk.Text(self.window, height=10, state='disabled')
+        self.chat_log = tk.Text(self.window, height=10)
         self.chat_log.grid(row=2, column=0, columnspan=7, pady=5)
         
         self.chat_entry = tk.Entry(self.window, width=50)

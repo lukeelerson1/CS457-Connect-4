@@ -73,7 +73,7 @@ def handle_client(client_socket, address):
 
             if message.startswith("COLUMN"):
                 if player_id != current_player:
-                    client_socket.send("Not your turn!".encode('utf-8'))
+                    client_socket.send(json.dumps({"type": "not_your_turn"}).encode('utf-8'))
                     continue
 
                 column = int(message.split()[1]) - 1
