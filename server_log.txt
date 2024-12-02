@@ -1,0 +1,147 @@
+2024-11-29 12:16:43,403 - INFO - Server listening on 0.0.0.0:12342
+2024-12-02 08:37:37,822 - INFO - Server listening on 0.0.0.0:12342
+2024-12-02 08:38:21,786 - INFO - Server listening on 0.0.0.0:12341
+2024-12-02 08:48:21,804 - INFO - Server listening on 0.0.0.0:12342
+2024-12-02 09:06:13,047 - INFO - Server listening on 0.0.0.0:12343
+2024-12-02 09:10:28,162 - INFO - Server listening on 0.0.0.0:12345
+2024-12-02 09:10:33,729 - INFO - New connection from ('127.0.0.1', 42654)
+2024-12-02 09:10:33,729 - INFO - Player 1 connected.
+2024-12-02 09:10:37,515 - INFO - New connection from ('127.0.0.1', 42664)
+2024-12-02 09:10:37,515 - INFO - Player 2 connected.
+2024-12-02 09:10:42,289 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:10:47,751 - INFO - Player 2 dropped a piece in column 1.
+2024-12-02 09:14:00,746 - INFO - Player 1 dropped a piece in column 2.
+2024-12-02 09:14:05,546 - INFO - Player 2 dropped a piece in column 3.
+2024-12-02 09:16:50,616 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:16:55,309 - INFO - Player 2 dropped a piece in column 1.
+2024-12-02 09:20:36,696 - INFO - Connection closed: ('127.0.0.1', 42654)
+2024-12-02 09:20:37,603 - INFO - Connection closed: ('127.0.0.1', 42664)
+2024-12-02 09:20:49,756 - INFO - Server listening on 0.0.0.0:12346
+2024-12-02 09:20:52,764 - INFO - New connection from ('127.0.0.1', 56450)
+2024-12-02 09:20:52,764 - INFO - Player 1 connected.
+2024-12-02 09:20:55,875 - INFO - New connection from ('127.0.0.1', 56452)
+2024-12-02 09:20:55,875 - INFO - Player 2 connected.
+2024-12-02 09:20:59,609 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:21:04,826 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:21:21,058 - INFO - Player 1 dropped a piece in column 2.
+2024-12-02 09:21:29,683 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:21:32,390 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:21:40,826 - INFO - Player 2 dropped a piece in column 1.
+2024-12-02 09:22:05,395 - ERROR - Error handling client ('127.0.0.1', 56450): [Errno 104] Connection reset by peer
+2024-12-02 09:22:05,395 - INFO - Connection closed: ('127.0.0.1', 56450)
+2024-12-02 09:22:06,201 - INFO - Connection closed: ('127.0.0.1', 56452)
+2024-12-02 09:22:14,126 - INFO - Server listening on 0.0.0.0:12347
+2024-12-02 09:22:17,537 - INFO - New connection from ('127.0.0.1', 55846)
+2024-12-02 09:22:17,537 - INFO - Player 1 connected.
+2024-12-02 09:22:20,198 - INFO - New connection from ('127.0.0.1', 55862)
+2024-12-02 09:22:20,198 - INFO - Player 2 connected.
+2024-12-02 09:22:48,193 - INFO - Connection closed: ('127.0.0.1', 55862)
+2024-12-02 09:22:50,794 - INFO - Connection closed: ('127.0.0.1', 55846)
+2024-12-02 09:23:29,670 - INFO - Server listening on 0.0.0.0:12348
+2024-12-02 09:23:32,812 - INFO - New connection from ('127.0.0.1', 44780)
+2024-12-02 09:23:32,813 - INFO - Player 1 connected.
+2024-12-02 09:23:37,268 - INFO - New connection from ('127.0.0.1', 44794)
+2024-12-02 09:23:37,268 - INFO - Player 2 connected.
+2024-12-02 09:23:39,973 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:23:42,638 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:23:45,499 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:23:48,610 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:23:51,475 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:23:54,125 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:23:56,966 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:23:56,966 - INFO - Player 1 wins by column.
+2024-12-02 09:23:56,966 - INFO - Board reset.
+2024-12-02 09:38:06,413 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:38:10,562 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:38:17,207 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:38:21,490 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:41:30,277 - INFO - Connection closed: ('127.0.0.1', 44780)
+2024-12-02 09:41:32,164 - INFO - Connection closed: ('127.0.0.1', 44794)
+2024-12-02 09:41:42,330 - INFO - Server listening on 0.0.0.0:12345
+2024-12-02 09:41:45,680 - INFO - New connection from ('127.0.0.1', 37502)
+2024-12-02 09:41:45,680 - INFO - Player 1 connected.
+2024-12-02 09:41:53,463 - INFO - New connection from ('127.0.0.1', 35762)
+2024-12-02 09:41:53,464 - INFO - Player 2 connected.
+2024-12-02 09:41:56,347 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:42:55,106 - INFO - Connection closed: ('127.0.0.1', 37502)
+2024-12-02 09:42:56,104 - INFO - Connection closed: ('127.0.0.1', 35762)
+2024-12-02 09:43:06,282 - INFO - Server listening on 0.0.0.0:12343
+2024-12-02 09:43:08,838 - INFO - New connection from ('127.0.0.1', 37510)
+2024-12-02 09:43:08,838 - INFO - Player 1 connected.
+2024-12-02 09:43:11,169 - INFO - New connection from ('127.0.0.1', 37520)
+2024-12-02 09:43:11,169 - INFO - Player 2 connected.
+2024-12-02 09:43:17,424 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:43:22,248 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:43:25,172 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:43:34,628 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:44:12,039 - INFO - Connection closed: ('127.0.0.1', 37510)
+2024-12-02 09:44:12,653 - INFO - Connection closed: ('127.0.0.1', 37520)
+2024-12-02 09:44:16,631 - INFO - Server listening on 0.0.0.0:12342
+2024-12-02 09:44:21,335 - INFO - New connection from ('127.0.0.1', 33032)
+2024-12-02 09:44:21,336 - INFO - Player 1 connected.
+2024-12-02 09:44:27,034 - INFO - New connection from ('127.0.0.1', 54584)
+2024-12-02 09:44:27,034 - INFO - Player 2 connected.
+2024-12-02 09:44:31,840 - INFO - Connection closed: ('127.0.0.1', 33032)
+2024-12-02 09:44:35,108 - INFO - New connection from ('127.0.0.1', 46062)
+2024-12-02 09:44:35,108 - INFO - Player 2 connected.
+2024-12-02 09:44:48,493 - INFO - Connection closed: ('127.0.0.1', 54584)
+2024-12-02 09:44:50,127 - INFO - Connection closed: ('127.0.0.1', 46062)
+2024-12-02 09:44:55,434 - INFO - Server listening on 0.0.0.0:12343
+2024-12-02 09:44:58,298 - INFO - New connection from ('127.0.0.1', 53966)
+2024-12-02 09:44:58,298 - INFO - Player 1 connected.
+2024-12-02 09:45:01,008 - INFO - New connection from ('127.0.0.1', 53982)
+2024-12-02 09:45:01,008 - INFO - Player 2 connected.
+2024-12-02 09:45:03,913 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:45:07,913 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:45:11,184 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:45:17,849 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:45:21,228 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:45:26,690 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:45:30,051 - INFO - Player 1 dropped a piece in column 3.
+2024-12-02 09:45:32,848 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:45:32,848 - INFO - Player 2 wins by column.
+2024-12-02 09:45:32,849 - INFO - Board reset.
+2024-12-02 09:45:45,806 - INFO - Player 2 dropped a piece in column 3.
+2024-12-02 09:45:56,033 - INFO - Connection closed: ('127.0.0.1', 53966)
+2024-12-02 09:45:57,078 - INFO - Connection closed: ('127.0.0.1', 53982)
+2024-12-02 09:54:04,674 - INFO - New connection from ('127.0.0.1', 56578)
+2024-12-02 09:54:04,674 - INFO - Player 1 connected.
+2024-12-02 09:54:07,139 - INFO - New connection from ('127.0.0.1', 56590)
+2024-12-02 09:54:07,139 - INFO - Player 2 connected.
+2024-12-02 09:54:09,611 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 09:54:13,563 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 09:54:40,115 - INFO - Server listening on 0.0.0.0:12341
+2024-12-02 09:54:43,249 - INFO - New connection from ('127.0.0.1', 34508)
+2024-12-02 09:54:43,249 - INFO - Player 1 connected.
+2024-12-02 09:54:47,070 - INFO - New connection from ('127.0.0.1', 34512)
+2024-12-02 09:54:47,070 - INFO - Player 2 connected.
+2024-12-02 09:54:49,758 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 10:07:17,327 - INFO - Connection closed: ('127.0.0.1', 34508)
+2024-12-02 10:07:19,899 - INFO - Connection closed: ('127.0.0.1', 34512)
+2024-12-02 10:07:33,547 - INFO - Server listening on 0.0.0.0:12342
+2024-12-02 10:07:36,085 - INFO - New connection from ('127.0.0.1', 40628)
+2024-12-02 10:07:36,085 - INFO - Player 1 connected.
+2024-12-02 10:07:38,323 - INFO - New connection from ('127.0.0.1', 40642)
+2024-12-02 10:07:38,323 - INFO - Player 2 connected.
+2024-12-02 10:07:49,906 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 10:07:58,430 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 10:08:07,152 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 10:08:10,400 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 10:08:19,909 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 10:08:44,052 - INFO - Connection closed: ('127.0.0.1', 40642)
+2024-12-02 10:08:44,836 - INFO - Connection closed: ('127.0.0.1', 40628)
+2024-12-02 10:08:48,899 - INFO - Server listening on 0.0.0.0:12348
+2024-12-02 10:08:52,530 - INFO - New connection from ('127.0.0.1', 39570)
+2024-12-02 10:08:52,530 - INFO - Player 1 connected.
+2024-12-02 10:08:55,567 - INFO - New connection from ('127.0.0.1', 39572)
+2024-12-02 10:08:55,567 - INFO - Player 2 connected.
+2024-12-02 10:08:57,792 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 10:09:00,584 - INFO - Player 2 dropped a piece in column 2.
+2024-12-02 10:09:06,358 - INFO - Player 1 dropped a piece in column 1.
+2024-12-02 10:09:11,024 - INFO - Player 2 dropped a piece in column 1.
+2024-12-02 10:09:15,140 - INFO - Player 1 dropped a piece in column 2.
+2024-12-02 10:09:18,391 - INFO - Player 2 dropped a piece in column 3.
+2024-12-02 10:12:18,992 - INFO - Player 1 disconnected.
+2024-12-02 10:12:18,992 - INFO - Connection closed: ('127.0.0.1', 39570)
+2024-12-02 10:12:22,492 - INFO - Player 2 disconnected.
+2024-12-02 10:12:22,492 - INFO - Connection closed: ('127.0.0.1', 39572)

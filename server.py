@@ -73,7 +73,7 @@ def handle_client(client_socket, address):
 
             if message.startswith("COLUMN"):
                 if player_id != current_player:
-                    client_socket.send("Not your turn!".encode('utf-8'))
+                    client_socket.send(json.dumps({"type": "not_your_turn"}).encode('utf-8'))
                     continue
 
                 column = int(message.split()[1]) - 1
@@ -86,22 +86,27 @@ def handle_client(client_socket, address):
                     client_socket.send("Column is full!".encode('utf-8'))
                     continue
 
-                broadcast_message({
+                move_ack_message = {
                     "type": "move_ack",
                     "column": column,
                     "row": row,
                     "player_id": player_id,
                     "board": board
-                })
+                }
+                client_socket.send(json.dumps(move_ack_message).encode('utf-8'))
+
+                broadcast_message(move_ack_message)
 
                 if check_winner(player_id):
-                    broadcast_message({
+                    game_over_message = {
                         "type": "game_over",
                         "message": f"Player {player_id + 1} wins!"
-                    })
+                    }
+                    broadcast_message(game_over_message)
                     reset_board()
                 else:
                     current_player = 1 - current_player
+
 
             elif message.startswith("CHAT"):
                 broadcast_message({

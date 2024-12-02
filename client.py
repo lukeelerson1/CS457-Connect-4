@@ -56,6 +56,8 @@ def receive_messages(client_socket):
             if message_type == "move_ack":
                 logging.info(f"Move accepted. Piece dropped in column {data.get('column') + 1} by player {data.get('player_id')}")
                 print_board(data.get("board"))
+            elif message_type == "not_your_turn":
+                logging.info("It's not your turn.")
             elif message_type == "chat":
                 logging.info(f"Chat: {data.get('message')}")
             elif message_type == "game_over":
@@ -72,7 +74,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     client_socket = connect_to_server(args.host, args.port)
-    # ... rest of your code
     if client_socket:
         receive_thread = threading.Thread(target=receive_messages, args=(client_socket,))
         receive_thread.start()
