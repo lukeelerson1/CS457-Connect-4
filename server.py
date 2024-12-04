@@ -13,11 +13,18 @@ board = [[None for _ in range(COLUMNS)] for _ in range(ROWS)]
 logging.basicConfig(filename='server_log.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def reset_board():
+    """
+    Resets the game board to its initial state.
+    """
     global board
     board = [[None for _ in range(COLUMNS)] for _ in range(ROWS)]
     logging.info("Board reset.")
 
 def drop_piece(column, player_id):
+    """
+    Drops a game piece into the specified column for the given player.
+
+    """
     global board
     for row in range(ROWS-1, -1, -1):
         if board[row][column] is None:
@@ -27,6 +34,9 @@ def drop_piece(column, player_id):
     return None
 
 def check_winner(player_id):
+    """
+    Checks if the given player has won the game.
+    """
     for row in range(ROWS):
         for col in range(COLUMNS - 3):
             if all(board[row][col + i] == player_id for i in range(4)):
@@ -51,6 +61,9 @@ def check_winner(player_id):
     return False
 
 def handle_client(client_socket, address):
+    """
+    Handles incoming messages from a connected client.
+    """
     global connected_clients, current_player
 
     logging.info(f"New connection from {address}")
@@ -86,22 +99,27 @@ def handle_client(client_socket, address):
                     client_socket.send("Column is full!".encode('utf-8'))
                     continue
 
-                broadcast_message({
+                move_ack_message = {
                     "type": "move_ack",
                     "column": column,
                     "row": row,
                     "player_id": player_id,
                     "board": board
-                })
+                }
+                client_socket.send(json.dumps(move_ack_message).encode('utf-8'))
+
+                broadcast_message(move_ack_message)
 
                 if check_winner(player_id):
-                    broadcast_message({
+                    game_over_message = {
                         "type": "game_over",
                         "message": f"Player {player_id + 1} wins!"
-                    })
+                    }
+                    broadcast_message(game_over_message)
                     reset_board()
                 else:
                     current_player = 1 - current_player
+
 
             elif message.startswith("CHAT"):
                 broadcast_message({
@@ -119,7 +137,16 @@ def handle_client(client_socket, address):
     connected_clients.remove(client_socket)
     client_socket.close()
 
+    if connected_clients:
+        broadcast_message({
+            "type": "player_left",
+            "message": f"Player {player_id + 1} has left the game."
+        })
+
 def broadcast_message(message_data):
+    """
+    Broadcasts a message to all connected clients.
+    """
     global connected_clients
     for client in connected_clients:
         try:
@@ -128,6 +155,9 @@ def broadcast_message(message_data):
             logging.error(f"Broadcast error: {e}")
 
 def start_server(host='localhost', port=12346):
+    """
+    Starts the game server.
+    """
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.bind((host, port))
     server_socket.listen(5)

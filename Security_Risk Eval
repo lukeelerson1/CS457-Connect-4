@@ -1,0 +1,10 @@
+Lack of Input Validation:
+    There’s no real input validation that would prevent someone from sending a malicious payload that could potentially affect the server. I could put in place better input validation to fix this
+No Authentication or Authorization:
+    There’s nothing stopping someone from connecting to my server. So I could create some form of a login of sorts so that who can connect is limited to verified users
+Insecure communications:
+    There’s really no form of encryption of the chat, it's all sent pretty much via plain text so I could add in some form of encryption for privacy reasons.
+Json messages are not validated:
+    I just kind of parse the json without validating so there could potentially be malicious json sent in. 
+Risk of server flooding:
+    I am in no way really managing resources. SO there is the threat of someone coming in and overloading things either intentionally or not. So putting some type of limit on requests and stuff like that could help.

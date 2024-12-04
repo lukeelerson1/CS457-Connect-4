@@ -27,10 +27,8 @@ Error Handling: The game should gracefully handle common errors, such as network
 - None
 
 ## Deliverables
-- Fully functioning Python script to handle game mechanics
-- Optional: GUI implemented using an HTML library if not handled by the Python script
-
-## Timeline
+- Fully functioning Python script to handle game mechanics COMPLETE
+- Optional: GUI implemented using an HTML library if not handled by the Python script DID NOT COMPLETE
 
 ### Key Milestones
 - **Sprint 0:** [Form teams, Setup Tools, Submit SOW] - Sept 08-Sept 22 COMLETE
@@ -38,7 +36,7 @@ Error Handling: The game should gracefully handle common errors, such as network
 - **Sprint 2:** [Develop Game Message Protocol, Manage Client connections] -  Oct 06-Oct 20 COMLETE
 - **Sprint 3:** [Multi-player functionality, Synchronize state across clients] - Oct 20-Nov 03 COMLETE
 - **Sprint 4:** [Game play, Game State] - Nov 03-Nov 17 COMPLETE
-- **Sprint 5:** [Implement Error Handling and Testing] - Nov 17-Dec 6 
+- **Sprint 5:** [Implement Error Handling and Testing] - Nov 17-Dec 6 COMPLETE
 
 ### Task Breakdown
 - **Task 1:** [Implement Server] - Estimated Duration: [8/1]  COMPLETE
@@ -49,13 +47,12 @@ Error Handling: The game should gracefully handle common errors, such as network
 ## Technical Requirements
 
 ### Hardware
-- Computer with modern web browser
-- server hopefully to be ran with AWS 
+- Windows or linux machine  
 
 ### Software
 - **Programming Languages:** Python
-- **Libraries:** socket, threading
-- **Operating Systems:** Windows
+- **Libraries:** socket, threading, json, argparse, logging
+- **Operating Systems:** Windows, Linux
 
 ## Assumptions
 - Will require available network
@@ -73,6 +70,8 @@ Single person team, so will not be accounted for
 - **Decision-Making:** N/A
 
 ## Additional Notes
+- run using Python3, has not been tested with Python2
+
 - Server can now be ran using following command:
     "python3 server.py -p PORT" 
     ex. "python3 server.py -p 12345"
@@ -80,6 +79,19 @@ Single person team, so will not be accounted for
 - Client can be ran using following command:
     "python3 client.py -i SERVER_ID -p PORT" .
     ex. "python3 client.py -i 0.0.0.0 -p 12345"
+
+## Functionalities
+
+- Connect 4 game, runs in CLI. Players can "move", "chat", and exit game
+- Chat functionality allows players to communicate while playing
+- Players can play a full game of Connect 4 
+
+## Known Issues
+
+- I was unable to implement a way to gracefully handle when a player disconnects. As far as what I should do with the remaining player
+- The state of the game is saves when a player leaves, that player is not able to rejoin and play because they get a new ID so it will always not be their turn
+- There is an issue that appears from time to time that I am unable to fix where a client will randomly just stop updating. Ihave not been able to find
+any reason behind this or been able to recreate this issue, it just seems to happen at random times.
 
 
 
