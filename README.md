@@ -70,15 +70,7 @@ Single person team, so will not be accounted for
 - **Decision-Making:** N/A
 
 ## Additional Notes
-- run using Python3, has not been tested with Python2
 
-- Server can now be ran using following command:
-    "python3 server.py -p PORT" 
-    ex. "python3 server.py -p 12345"
-
-- Client can be ran using following command:
-    "python3 client.py -i SERVER_ID -p PORT" .
-    ex. "python3 client.py -i 0.0.0.0 -p 12345"
 
 ## Functionalities
 
@@ -93,6 +85,41 @@ Single person team, so will not be accounted for
 - There is an issue that appears from time to time that I am unable to fix where a client will randomly just stop updating. Ihave not been able to find
 any reason behind this or been able to recreate this issue, it just seems to happen at random times.
 
+## How To Run
+
+- run using Python3, has not been tested with Python2
+
+- Server can now be ran using following command:
+    "python3 server.py -p PORT" 
+    ex. "python3 server.py -p 12345"
+
+- Client can be ran using following command:
+    "python3 client.py -i SERVER_ID -p PORT" .
+    ex. "python3 client.py -i 0.0.0.0 -p 12345"
+
+## Road Map
+
+Moving further I would really like for the project to have a GUI. I created one that worked locally on my personal machine using Tkinter, but was unable to put it 
+into the actual project as I was never able to make Tkinter work on the lab machines. I think I would also want to do a better job at handlign players disconnecting
+and reconnection as currently once a player leaves the game basically cannot be played. I think having some form of a login or way for a player to have stats could be 
+cool as well. 
+
+I think it would be cool, instead of having only connect four, to have multiple games that the player can switch between to make the application have more than 
+the one simple use. I think a collection of board-styled games would be way more enticing for someone looking for something kind of like this.
+
+The last thing I would really like to add would be match making. I think the server should be able to handle way more clients and with that give the player
+the ability to connect to another random client that is also looking at the same time.
+
+## Retrospective
+
+### What went right:
+* I think overall the core functionality was fleshed out appropriately
+* I like that I got a chat to work well.
+* I think the core gameplay mechanics are present and work quite well
+
+### What didn't go right
+* My inability to get Tkinter to work on the lab machines really bothered me. I had a really solid UI working very well
+* I think tehre are still some very random issues that pop up from time to time that I just cant figure out what's causing them or how to fix them
 
 
 
