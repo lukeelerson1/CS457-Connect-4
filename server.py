@@ -83,7 +83,7 @@ def handle_client(client_socket, address):
 
                 row = drop_piece(column, player_id)
                 if row is None:
-                    client_socket.send("Column is full!".encode('utf-8'))
+                    client_socket.send(json.dumps({"type": "column_full"}).encode('utf-8'))
                     continue
 
                 broadcast_message({
@@ -97,15 +97,17 @@ def handle_client(client_socket, address):
                 if check_winner(player_id):
                     broadcast_message({
                         "type": "game_over",
-                        "message": f"Player {player_id + 1} wins!"
+                        "message": f"Player {player_id + 1} wins! Board will reset after winner makes first move."
                     })
                     reset_board()
                 else:
                     current_player = 1 - current_player
 
             elif message.startswith("CHAT"):
+                player_id = connected_clients.index(client_socket)
                 broadcast_message({
                     "type": "chat",
+                    "player_id": player_id,
                     "message": message.split(' ', 1)[1]
                 })
 
@@ -127,7 +129,7 @@ def broadcast_message(message_data):
         except Exception as e:
             logging.error(f"Broadcast error: {e}")
 
-def start_server(host='localhost', port=12346):
+def start_server(host='0.0.0.0', port=12346):
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.bind((host, port))
     server_socket.listen(5)

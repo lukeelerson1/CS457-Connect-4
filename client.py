@@ -68,13 +68,20 @@ class Connect4Client:
                 elif message_type == "chat":
                     logging.info(f"Chat: {data.get('message')}")
                     self.chat_log.config(state='normal')
-                    self.chat_log.insert(tk.END, f"Chat: {data.get('message')}\n")
+                    player_id = data.get('player_id')
+                    if player_id is not None:
+                        self.chat_log.insert(tk.END, f"Player {player_id + 1}: {data['message']}\n")
+                    else:
+                        self.chat_log.insert(tk.END, f"Unknown Player: {data['message']}\n")
                     self.chat_log.config(state='disabled')
                 elif message_type == "game_over":
                     logging.info(data.get("message"))
                     messagebox.showinfo("Game Over", data.get("message"))
                 elif message_type == "not_your_turn":
                     messagebox.showerror("Error", "Not your turn!")
+                    self.update_board()
+                elif message_type == "column_full":
+                    messagebox.showerror("Error", "Column is full!")
                     self.update_board()
             except Exception as e:
                 logging.error(f"Error receiving message: {e}")
