@@ -81,6 +81,6 @@ Single person team, so will not be accounted for
     "python3 client.py -i SERVER_ID -p PORT" .
     ex. "python3 client.py -i localhost -p 12345"
 
-
+- When client is launched a window should appear for each client with a GUI press buttons correspnding to desired column to drop a piece. Chat functionality works, you do have to click send, cannot press enter to send chat message.
 
 
