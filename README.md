@@ -79,7 +79,7 @@ Single person team, so will not be accounted for
 
 - Client can be ran using following command:
     "python3 client.py -i SERVER_ID -p PORT" .
-    ex. "python3 client.py -i 0.0.0.0 -p 12345"
+    ex. "python3 client.py -i localhost -p 12345"
 
 
 
